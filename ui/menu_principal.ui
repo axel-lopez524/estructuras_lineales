@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>622</width>
+    <height>318</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* ===== QMainWindow ===== */
+QMainWindow {
+    background-color: #0F172A;
+}
+
+/* ===== QWidget ===== */
+QWidget {
+    background-color: #0F172A;
+    color: #F8FAFC;
+    font-family: &quot;Segoe UI&quot;;
+    font-size: 10pt;
+}
+
+/* ===== Menu Bar ===== */
+QMenuBar {
+    background-color: #1E293B;
+    color: white;
+    border-bottom: 2px solid #22C55E;
+    padding: 4px;
+}
+
+QMenuBar::item {
+    background: transparent;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+QMenuBar::item:selected {
+    background-color: #2563EB;
+    color: white;
+}
+
+QMenuBar::item:pressed {
+    background-color: #1D4ED8;
+}
+
+/* ===== Menús desplegables ===== */
+QMenu {
+    background-color: #1E293B;
+    color: white;
+    border: 1px solid #22C55E;
+    padding: 5px;
+}
+
+QMenu::item {
+    padding: 8px 25px;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background-color: #22C55E;
+    color: #0F172A;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: #334155;
+    margin: 5px 10px;
+}
+
+/* ===== Acciones ===== */
+QAction {
+    color: white;
+}
+
+/* ===== Botones ===== */
+QPushButton {
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #3B82F6;
+}
+
+QPushButton:pressed {
+    background-color: #1D4ED8;
+}
+
+/* ===== Campos de texto ===== */
+QLineEdit, QTextEdit, QPlainTextEdit {
+    background-color: #1E293B;
+    border: 2px solid #334155;
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+}
+
+QLineEdit:focus, QTextEdit:focus {
+    border: 2px solid #22C55E;
+}
+
+/* ===== Tablas ===== */
+QTableWidget {
+    background-color: #1E293B;
+    alternate-background-color: #273449;
+    gridline-color: #334155;
+    color: white;
+    border: 1px solid #334155;
+}
+
+QHeaderView::section {
+    background-color: #2563EB;
+    color: white;
+    padding: 6px;
+    border: none;
+    font-weight: bold;
+}
+
+/* ===== Barra de estado ===== */
+QStatusBar {
+    background-color: #1E293B;
+    color: white;
+    border-top: 2px solid #22C55E;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>622</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuLista_Enlazada">
+    <property name="title">
+     <string>Estructuras</string>
+    </property>
+    <widget class="QMenu" name="menu1_Insertar_inicio">
+     <property name="title">
+      <string>Lineales</string>
+     </property>
+     <addaction name="actionLista_Enlazada"/>
+    </widget>
+    <addaction name="menu1_Insertar_inicio"/>
+    <addaction name="separator"/>
+    <addaction name="action5_Salir"/>
+   </widget>
+   <addaction name="menuLista_Enlazada"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action2_Insertar_final">
+   <property name="text">
+    <string>2.- Insertar final</string>
+   </property>
+  </action>
+  <action name="action3_Buscar">
+   <property name="text">
+    <string>3.- Buscar</string>
+   </property>
+  </action>
+  <action name="action4_Imprimir">
+   <property name="text">
+    <string>4.- Imprimir</string>
+   </property>
+  </action>
+  <action name="action5_Salir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionLista_Enlazada">
+   <property name="text">
+    <string>Lista Enlazada</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
