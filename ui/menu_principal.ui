@@ -142,7 +142,7 @@ QStatusBar {
      <x>0</x>
      <y>0</y>
      <width>622</width>
-     <height>48</height>
+     <height>39</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuLista_Enlazada">
@@ -154,9 +154,18 @@ QStatusBar {
       <string>Lineales</string>
      </property>
      <addaction name="actionLista_Enlazada"/>
+     <addaction name="actionpila"/>
+    </widget>
+    <widget class="QMenu" name="menuinflija_y_posfija">
+     <property name="title">
+      <string>aplicacione</string>
+     </property>
+     <addaction name="actioninflija"/>
     </widget>
     <addaction name="menu1_Insertar_inicio"/>
     <addaction name="separator"/>
+    <addaction name="actionno_lineales"/>
+    <addaction name="menuinflija_y_posfija"/>
     <addaction name="action5_Salir"/>
    </widget>
    <addaction name="menuLista_Enlazada"/>
@@ -185,6 +194,21 @@ QStatusBar {
   <action name="actionLista_Enlazada">
    <property name="text">
     <string>Lista Enlazada</string>
+   </property>
+  </action>
+  <action name="actionpila">
+   <property name="text">
+    <string>pila </string>
+   </property>
+  </action>
+  <action name="actionno_lineales">
+   <property name="text">
+    <string>no lineales</string>
+   </property>
+  </action>
+  <action name="actioninflija">
+   <property name="text">
+    <string>Posfija</string>
    </property>
   </action>
  </widget>

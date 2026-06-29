@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Estilo general de la ventana */
+QDialog {
+    background-color: #1e1e24;
+    color: #ffffff;
+    font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
+}
+
+/* Estilo para las etiquetas de texto (Expresión Infija y Resultado) */
+QLabel {
+    color: #e0e0e0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Estilo específico para el texto de &quot;Resultado...&quot; para resaltarlo */
+/* Nota: Si le pones el objectName &quot;label_resultado&quot; en Qt Designer, aplicará este filtro */
+QLabel#label_2 {
+    color: #4ade80; /* Un tono verde brillante moderno para el resultado */
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilo para la caja de texto de entrada */
+QLineEdit {
+    background-color: #2d2d34;
+    border: 2px solid #3f3f46;
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 6px 12px;
+    font-size: 14px;
+    selection-background-color: #2563eb;
+}
+
+QLineEdit:focus {
+    border: 2px solid #3b82f6; /* Borde azul cuando estás escribiendo */
+    background-color: #32323b;
+}
+
+/* Estilo para el botón de Convertir */
+QPushButton {
+    background-color: #2563eb; /* Azul moderno */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 100px;
+}
+
+QPushButton:hover {
+    background-color: #3b82f6; /* Azul un poco más claro al pasar el mouse */
+}
+
+QPushButton:pressed {
+    background-color: #1d4ed8; /* Azul más oscuro al hacer clic */
+}</string>
+  </property>
+  <widget class="QPushButton" name="btn_convertir">
+   <property name="geometry">
+    <rect>
+     <x>269</x>
+     <y>100</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>140</width>
+     <height>25</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>convertir</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_inflija">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exprecion inflija </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_resultado">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>180</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>80</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>Resultado...</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_inflija">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>30</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
